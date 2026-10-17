@@ -1,15 +1,12 @@
+import Image from "next/image";
+import partnerBadges from "@/public/images/partner-badges.jpg";
+
 const stats = [
   { v: "2021", l: "ปีที่ก่อตั้ง" },
   { v: "฿200M+", l: "งบโฆษณาที่บริหารต่อปี" },
   { v: "฿1,200M+", l: "ยอดขายที่สร้างร่วมกับพาร์ทเนอร์" },
   { v: "100+", l: "แบรนด์ที่ร่วมงาน" },
   { v: "#2", l: "Thai Independent Agency · Meta 2025" },
-];
-
-const badges = [
-  "Meta Business Partner",
-  "Google Partner",
-  "Meta First Agency Awards 2025",
 ];
 
 export function Stats() {
@@ -24,18 +21,16 @@ export function Stats() {
             </div>
           ))}
         </dl>
-        {/* แถบ badge: ถ้ามีไฟล์รูป badge ให้วางที่ public/badges/ แล้วเปลี่ยนเป็น <Image> */}
-        <ul className="mt-10 flex flex-wrap items-center gap-2 border-t border-line pt-6">
-          <li className="label mr-2 !text-muted">{"// certified"}</li>
-          {badges.map((b) => (
-            <li
-              key={b}
-              className="rounded-full border border-line px-3 py-1 font-mono text-label text-fg"
-            >
-              {b}
-            </li>
-          ))}
-        </ul>
+        <div className="mt-10 flex flex-col gap-4 border-t border-line pt-6 sm:flex-row sm:items-center">
+          <p className="label shrink-0 !text-muted">{"// certified partners"}</p>
+          <Image
+            src={partnerBadges}
+            alt="Meta Business Partner, Google Partner, TikTok Agency Partner และ Marketing Excellence Awards 2025"
+            placeholder="blur"
+            sizes="(min-width: 640px) 720px, 100vw"
+            className="h-auto w-full max-w-3xl rounded-lg"
+          />
+        </div>
       </div>
     </section>
   );

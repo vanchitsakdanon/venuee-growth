@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Nav } from "./components/Nav";
 import { Process } from "./components/Process";
+import { Proof } from "./components/Proof";
 import { Services } from "./components/Services";
 import { Stats } from "./components/Stats";
 import { WhyUs } from "./components/WhyUs";
@@ -19,6 +20,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Stats />
+        <Proof />
         <WhyUs />
         <Services />
         <Process />
