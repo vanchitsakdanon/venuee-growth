@@ -8,8 +8,8 @@ export function Proof() {
   return (
     <section id="proof" className="scroll-mt-20 mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
       <p className="label">{"// proof"}</p>
-      <h2 className="mt-3 max-w-2xl text-h2 font-bold">
-        รางวัลที่ Meta และวงการมอบให้ ไม่ใช่เราประกาศเอง
+      <h2 className="mt-3 max-w-2xl text-h2 font-semibold">
+        Recognized by Meta and the industry. Not self-declared.
       </h2>
 
       <div className="mt-10 grid gap-4 md:grid-cols-3 md:grid-rows-2">
@@ -25,7 +25,7 @@ export function Proof() {
           <figcaption className="absolute inset-x-0 bottom-0 bg-linear-to-t from-bg via-bg/70 to-transparent p-5 pt-16 sm:p-6">
             <p className="label">{"// meta agency first awards 2025 · silver"}</p>
             <p className="mt-1 text-h3 font-semibold text-fg">
-              อันดับ 2 Thai Independent Agency of the Year
+              #2 Thai Independent Agency of the Year
             </p>
           </figcaption>
         </figure>
@@ -41,7 +41,7 @@ export function Proof() {
           />
           <figcaption className="absolute inset-x-0 bottom-0 bg-linear-to-t from-bg via-bg/70 to-transparent p-4 pt-12">
             <p className="label">{"// marketing excellence awards"}</p>
-            <p className="mt-1 text-small font-medium text-fg">6 รางวัลใน 2 ปี (2024–2025)</p>
+            <p className="mt-1 text-small font-medium text-fg">6 awards in 2 years (2024–2025)</p>
           </figcaption>
         </figure>
 

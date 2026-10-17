@@ -4,19 +4,19 @@ const points = [
   {
     icon: Award,
     tag: "// verified by meta",
-    title: "Meta รับรอง ไม่ได้ประกาศเอง",
+    title: "Verified by Meta, not by us",
     body: "อันดับ 2 หมวด Thai Independent Agency จาก Meta First Agency Awards 2025 และเป็น Meta Business Partner กับ Google Partner อย่างเป็นทางการ",
   },
   {
     icon: Target,
     tag: "// business metrics",
-    title: "วัดผลที่ธุรกิจ ไม่ได้วัดที่ตัวเลขโฆษณา",
+    title: "Business metrics, not ad metrics",
     body: "บริหารงบโฆษณากว่า ฿200 ล้านต่อปี สร้างยอดขายร่วมกับพาร์ทเนอร์กว่า ฿1,200 ล้าน เราเริ่มจากต้นทุน margin และ Customer Acquisition Cost ของคุณ ก่อนวางแคมเปญแรก",
   },
   {
     icon: Shield,
     tag: "// no lock-in",
-    title: "โปร่งใสและไม่ผูกมัด",
+    title: "Transparent. No lock-in.",
     body: "รันแคมเปญบนบัญชีโฆษณาของแบรนด์เอง ข้อมูลเป็นของคุณ 100% มี dashboard ดูผลได้ 24/7 ประชุมสรุปผลทุก 2 สัปดาห์ และใช้สัญญารายเดือน",
   },
 ];
@@ -25,8 +25,8 @@ export function WhyUs() {
   return (
     <section id="why" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
       <p className="label">{"// why venuee"}</p>
-      <h2 className="mt-3 max-w-2xl text-h2 font-bold">
-        เอเจนซีที่วัดผลด้วยตัวเลขเดียวกับที่คุณดูตอนปิดงบ
+      <h2 className="mt-3 max-w-2xl text-h2 font-semibold">
+        An agency measured by the same numbers you see at month-end.
       </h2>
       <div className="mt-10 grid gap-4 md:grid-cols-3">
         {points.map((p) => (

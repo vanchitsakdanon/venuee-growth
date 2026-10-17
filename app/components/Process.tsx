@@ -23,12 +23,12 @@ export function Process() {
   return (
     <section id="process" className="scroll-mt-20 mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
       <p className="label">{"// how it works"}</p>
-      <h2 className="mt-3 max-w-2xl text-h2 font-bold">3 ขั้นตอน จากเป้าหมายถึงยอดขาย</h2>
+      <h2 className="mt-3 max-w-2xl text-h2 font-semibold">Three steps from goal to revenue.</h2>
       <ol className="mt-10 grid gap-4 md:grid-cols-3">
         {steps.map((s, i) => (
           <li key={s.n} className="card relative p-6">
             <div className="flex items-center justify-between">
-              <span className="font-mono text-stat font-semibold text-brand/90">{s.n}</span>
+              <span className="font-mono text-stat font-semibold text-brand-link">{s.n}</span>
               {i < steps.length - 1 && (
                 <span aria-hidden className="hidden font-mono text-muted md:block">
                   →

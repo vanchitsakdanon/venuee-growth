@@ -24,7 +24,7 @@ export function Faq() {
     <section id="faq" className="scroll-mt-20 border-t border-line bg-card/30">
       <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:py-28">
         <p className="label">{"// faq"}</p>
-        <h2 className="mt-3 text-h2 font-bold">คำถามที่พบบ่อย</h2>
+        <h2 className="mt-3 text-h2 font-semibold">Frequently asked questions</h2>
         <div className="mt-8 divide-y divide-line border-y border-line">
           {faqs.map((f) => (
             <details key={f.q} className="group py-5">

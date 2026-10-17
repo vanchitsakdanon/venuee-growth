@@ -15,11 +15,11 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 72,
-          background: "#0e0e0e",
+          background: "#171717",
           color: "#ededed",
           fontFamily: "sans-serif",
           backgroundImage:
-            "radial-gradient(circle at 85% 20%, rgba(5,200,134,0.25), transparent 45%)",
+            "radial-gradient(circle at 85% 20%, rgba(62,207,142,0.22), transparent 45%)",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -28,17 +28,17 @@ export default function OpenGraphImage() {
               width: 18,
               height: 18,
               borderRadius: 999,
-              background: "#05c886",
-              boxShadow: "0 0 24px #05c886",
+              background: "#3ecf8e",
+              boxShadow: "0 0 24px #3ecf8e",
             }}
           />
           <div style={{ fontSize: 34, fontWeight: 700, letterSpacing: -1 }}>venuee</div>
-          <div style={{ fontSize: 20, color: "#05c886", marginLeft: 12 }}>
+          <div style={{ fontSize: 20, color: "#3ecf8e", marginLeft: 12 }}>
             {"// PERFORMANCE MARKETING"}
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          <div style={{ fontSize: 92, fontWeight: 700, letterSpacing: -3, lineHeight: 1 }}>
+          <div style={{ fontSize: 88, fontWeight: 600, letterSpacing: -1, lineHeight: 1.05 }}>
             Start your growth engine.
           </div>
           <div style={{ fontSize: 30, color: "#a1a1a1" }}>

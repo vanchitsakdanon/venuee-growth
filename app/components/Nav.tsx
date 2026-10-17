@@ -2,11 +2,11 @@ import { Logo } from "./Logo";
 import { CTA_PRIMARY, LINE_URL } from "./site";
 
 const links = [
-  { href: "#services", label: "บริการ" },
-  { href: "#process", label: "ขั้นตอน" },
-  { href: "#fit", label: "เหมาะกับใคร" },
-  { href: "#faq", label: "คำถาม" },
-  { href: "#contact", label: "ติดต่อ" },
+  { href: "#services", label: "Services" },
+  { href: "#process", label: "Process" },
+  { href: "#fit", label: "Who we work with" },
+  { href: "#faq", label: "FAQ" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Nav() {
@@ -21,7 +21,7 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-small text-muted transition hover:text-fg"
+              className="text-small font-medium text-fg/90 transition hover:text-fg"
             >
               {l.label}
             </a>
@@ -31,7 +31,7 @@ export function Nav() {
           href={LINE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-primary !min-h-10 !px-4 !py-2 text-small"
+          className="btn-primary"
         >
           {CTA_PRIMARY}
         </a>

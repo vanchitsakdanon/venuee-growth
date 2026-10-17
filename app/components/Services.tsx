@@ -48,8 +48,8 @@ export function Services() {
     <section id="services" className="scroll-mt-20 border-t border-line bg-card/30">
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
         <p className="label">{"// services"}</p>
-        <h2 className="mt-3 max-w-2xl text-h2 font-bold">
-          กลยุทธ์ Creative และ Media ครบในทีมเดียว
+        <h2 className="mt-3 max-w-2xl text-h2 font-semibold">
+          Strategy, creative and media. One team.
         </h2>
         <p className="mt-4 max-w-2xl text-body text-muted">
           ไม่ต้องประสานงานหลายเจ้า ทีมเดียวรับผิดชอบตั้งแต่ตัวเลขเป้าหมายจนถึงยอดขายที่เกิดขึ้นจริง

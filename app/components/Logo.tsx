@@ -6,7 +6,7 @@ export function Logo({ className = "" }: { className?: string }) {
         aria-hidden
         className="h-3.5 w-3.5 rounded-full bg-brand shadow-[0_0_18px_var(--brand)]"
       />
-      <span className="text-xl font-bold tracking-tight">venuee</span>
+      <span className="font-heading text-xl font-semibold tracking-tight">venuee</span>
     </span>
   );
 }

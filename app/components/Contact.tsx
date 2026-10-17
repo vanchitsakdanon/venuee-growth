@@ -12,8 +12,8 @@ export function Contact() {
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
           <div>
             <p className="label">{"// contact"}</p>
-            <h2 className="mt-3 text-h2 font-bold">
-              พร้อมเริ่ม growth engine ของคุณหรือยัง
+            <h2 className="mt-3 text-h2 font-semibold">
+              Ready to start your growth engine?
             </h2>
             <p className="mt-4 max-w-xl text-body text-muted">
               ทักมาทาง LINE บอกธุรกิจ ช่วงงบ และเป้าหมายของคุณ ทีมจะนัดคุยและเริ่ม Growth Audit ให้ฟรี

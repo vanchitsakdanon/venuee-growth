@@ -13,16 +13,16 @@ export function Compare() {
     <section className="border-t border-line bg-card/30">
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
         <p className="label">{"// compare"}</p>
-        <h2 className="mt-3 max-w-2xl text-h2 font-bold">ต่างจากเอเจนซีทั่วไปและทีม in-house ตรงไหน</h2>
+        <h2 className="mt-3 max-w-2xl text-h2 font-semibold">How we differ from agencies and in-house teams.</h2>
 
         <div className="card mt-10 overflow-x-auto">
           <table className="w-full min-w-[640px] border-collapse text-left text-small">
             <thead>
               <tr className="border-b border-line">
                 <th className="p-4 font-mono text-label font-medium text-muted">{"// criteria"}</th>
-                <th className="bg-brand/5 p-4 font-semibold text-brand">Venuee</th>
-                <th className="p-4 font-medium text-muted">เอเจนซีทั่วไป</th>
-                <th className="p-4 font-medium text-muted">ทีม in-house</th>
+                <th className="bg-brand/5 p-4 font-semibold text-brand-link">Venuee</th>
+                <th className="p-4 font-medium text-muted">Typical agency</th>
+                <th className="p-4 font-medium text-muted">In-house team</th>
               </tr>
             </thead>
             <tbody>

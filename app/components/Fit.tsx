@@ -16,12 +16,12 @@ export function Fit() {
   return (
     <section id="fit" className="scroll-mt-20 mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
       <p className="label">{"// who we work with"}</p>
-      <h2 className="mt-3 max-w-2xl text-h2 font-bold">
-        เราทำงานกับเจ้าของแบรนด์ Founder CMO และ Head of Ecommerce ที่พร้อม scale
+      <h2 className="mt-3 max-w-2xl text-h2 font-semibold">
+        Built for founders, CMOs and Heads of Ecommerce ready to scale.
       </h2>
       <div className="mt-10 grid gap-4 md:grid-cols-[1.3fr_1fr]">
         <div className="card p-6">
-          <p className="label">{"// เหมาะกับ"}</p>
+          <p className="label">{"// good fit"}</p>
           <ul className="mt-4 space-y-3">
             {fit.map((t) => (
               <li key={t} className="flex gap-3 text-body text-fg">
@@ -32,7 +32,7 @@ export function Fit() {
           </ul>
         </div>
         <div className="card p-6">
-          <p className="label !text-muted">{"// ยังไม่เหมาะกับ"}</p>
+          <p className="label !text-muted">{"// not yet"}</p>
           <ul className="mt-4 space-y-3">
             {notFit.map((t) => (
               <li key={t} className="flex gap-3 text-body text-muted">

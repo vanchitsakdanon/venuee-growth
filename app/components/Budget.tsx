@@ -26,7 +26,7 @@ export function Budget() {
           <div className="relative grid gap-10 lg:grid-cols-[1fr_1fr]">
             <div>
               <p className="label">{"// pricing"}</p>
-              <h2 className="mt-3 text-h2 font-bold">ไม่มีราคาตายตัว เพราะแผนขึ้นกับตัวเลขของคุณ</h2>
+              <h2 className="mt-3 text-h2 font-semibold">No fixed price. The plan depends on your numbers.</h2>
               <p className="mt-4 text-body text-muted">
                 ค่าบริการขึ้นกับขนาดบัญชีและขอบเขตงาน เริ่มจากเลือกช่วงงบโฆษณาต่อเดือนของคุณ
                 แล้วรับ Growth Audit ฟรีก่อนตัดสินใจ ไม่มีข้อผูกมัด
@@ -42,7 +42,7 @@ export function Budget() {
               </a>
             </div>
             <div>
-              <p className="font-mono text-label text-muted">งบโฆษณาต่อเดือนของคุณ</p>
+              <p className="label !text-muted">{"// your monthly ad budget"}</p>
               <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2" role="group" aria-label="ช่วงงบโฆษณาต่อเดือน">
                 {ranges.map((r) => {
                   const on = r.id === sel;
@@ -54,8 +54,8 @@ export function Budget() {
                       onClick={() => setSel(on ? null : r.id)}
                       className={`rounded-lg border px-4 py-3 text-left font-mono text-small transition ${
                         on
-                          ? "border-brand bg-brand/10 text-fg shadow-[0_0_20px_rgba(5,200,134,0.2)]"
-                          : "border-line bg-bg text-muted hover:border-brand/50 hover:text-fg"
+                          ? "border-brand-link bg-brand/10 text-fg"
+                          : "border-line-strong bg-bg text-muted hover:border-brand/60 hover:text-fg"
                       }`}
                     >
                       {r.label}

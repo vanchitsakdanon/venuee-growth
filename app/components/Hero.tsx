@@ -13,13 +13,13 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-6xl gap-12 px-4 pb-20 pt-16 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:pb-28 lg:pt-24">
         <div>
           <p className="label">{"// performance marketing agency · bangkok"}</p>
-          <h1 className="mt-5 text-hero font-bold">
+          <h1 className="mt-5 text-hero font-medium">
             Start your
             <br />
-            <span className="text-brand">growth engine.</span>
+            <span className="text-brand-link">growth engine.</span>
           </h1>
           <p className="mt-5 text-lead font-medium text-fg">
-            เปลี่ยนงบโฆษณาให้เป็นยอดขายที่วัดผลได้ทุกบาท
+            Turn ad spend into revenue you can measure, down to the baht.
           </p>
           <p className="mt-4 max-w-xl text-body text-muted">
             Venuee เป็น Growth Engine ให้แบรนด์ DTC Ecommerce และธุรกิจ B2B

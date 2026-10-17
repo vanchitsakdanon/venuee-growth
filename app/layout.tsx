@@ -1,13 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Sans_Thai, Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, Manrope, Noto_Sans_Thai, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-
-const plexThai = IBM_Plex_Sans_Thai({
-  variable: "--font-plex-thai",
-  subsets: ["thai", "latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,10 +8,21 @@ const inter = Inter({
   display: "swap",
 });
 
-const jetbrains = JetBrains_Mono({
-  variable: "--font-jetbrains",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  display: "swap",
+});
+
+const notoThai = Noto_Sans_Thai({
+  variable: "--font-noto-thai",
+  subsets: ["thai", "latin"],
+  display: "swap",
+});
+
+const sourceCode = Source_Code_Pro({
+  variable: "--font-source-code",
+  subsets: ["latin"],
   display: "swap",
 });
 
@@ -56,7 +60,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0e0e0e",
+  themeColor: "#171717",
   colorScheme: "dark",
 };
 
@@ -64,7 +68,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="th"
-      className={`${plexThai.variable} ${inter.variable} ${jetbrains.variable} h-full antialiased`}
+      className={`${inter.variable} ${manrope.variable} ${notoThai.variable} ${sourceCode.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-fg">{children}</body>
     </html>

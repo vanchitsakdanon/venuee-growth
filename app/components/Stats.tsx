@@ -2,10 +2,10 @@ import Image from "next/image";
 import partnerBadges from "@/public/images/partner-badges.jpg";
 
 const stats = [
-  { v: "2021", l: "ปีที่ก่อตั้ง" },
-  { v: "฿200M+", l: "งบโฆษณาที่บริหารต่อปี" },
-  { v: "฿1,200M+", l: "ยอดขายที่สร้างร่วมกับพาร์ทเนอร์" },
-  { v: "100+", l: "แบรนด์ที่ร่วมงาน" },
+  { v: "2021", l: "Founded" },
+  { v: "฿200M+", l: "Ad spend managed per year" },
+  { v: "฿1,200M+", l: "Revenue generated with partners" },
+  { v: "100+", l: "Brands" },
   { v: "#2", l: "Thai Independent Agency · Meta 2025" },
 ];
 
@@ -16,7 +16,7 @@ export function Stats() {
         <dl className="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-5">
           {stats.map((s) => (
             <div key={s.l} className="min-w-0">
-              <dd className="text-stat font-bold tabular-nums text-fg">{s.v}</dd>
+              <dd className="font-heading text-stat font-semibold tabular-nums text-fg">{s.v}</dd>
               <dt className="mt-2 text-small text-muted">{s.l}</dt>
             </div>
           ))}
